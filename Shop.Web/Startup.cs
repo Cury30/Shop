@@ -33,6 +33,8 @@ namespace Shop.Web
                 cfg.UseSqlServer(this.Configuration.GetConnectionString("ShopWebConection"));
             });
 
+            services.AddTransient<SeedDb>();
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.

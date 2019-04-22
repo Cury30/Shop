@@ -2,6 +2,7 @@
 
 namespace Shop.Web.Data
 {
+ 
     using Microsoft.EntityFrameworkCore;
     using Shop.Web.Data.Entities;
 
@@ -11,8 +12,7 @@ namespace Shop.Web.Data
 
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-
         }
-
     }
+
 }
